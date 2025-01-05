@@ -1,0 +1,22 @@
+@import url("../../assets/styles/style.css");
+
+.wrapper {
+    width: 100%;
+    height: max-content;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper__block {
+        width: max-content;
+        height: max-content;
+        max-width: 430px;
+        max-height: 133px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+}

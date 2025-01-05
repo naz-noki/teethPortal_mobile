@@ -1,0 +1,47 @@
+@import url("../../assets/styles/style.css");
+
+.wrapper {
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 350ms;
+
+    .wrapper__activeText_nd {
+        width: max-content;
+        height: max-content;
+        font-family: "Caesar-Dressing";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29.13px;
+        color: transparent;
+        margin: 0 auto;
+        margin-bottom: -15px;
+        transition: 350ms;
+    }
+    .wrapper__activeText {
+        color: var(--main-white) !important;
+        text-shadow: rgb(255, 255, 255) 1px 0 15px;
+        transition: 350ms;
+    }
+    .wrapper__title {
+        width: max-content;
+        height: max-content;
+        font-family: "Rock-Salt";
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 52.49px;
+        color: var(--text-grey);
+        margin: 0 auto;
+        transition: 350ms;
+
+        &:hover {
+            transition: 300ms;
+            transform: scale(1.1);
+        }
+    }
+    .wrapper__title_active {
+        color: var(--text-white);
+        text-shadow: rgb(255, 255, 255) 1px 0 15px;
+    }
+}
