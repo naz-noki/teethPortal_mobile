@@ -1,0 +1,27 @@
+@import url("../../assets/styles/style.css");
+
+.wrapper {
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Unbounded";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: var(--main-grey);
+    transition: 350ms;
+    
+    &:hover {
+        transition: 300ms;
+        text-shadow: rgb(255, 255, 255) 1px 0 15px;
+    }
+}
+
+.wrapper__active {
+    color: var(--main-white);
+
+    &:hover {
+        text-shadow: none;
+    }
+}
