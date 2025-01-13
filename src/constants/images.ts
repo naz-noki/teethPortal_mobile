@@ -1,0 +1,4 @@
+export default [
+    "images/1.png",
+    "images/2.JPG",
+];

@@ -1,0 +1,46 @@
+@import url("../../assets/styles/style.css");
+
+.wrapper {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-top: 59px;
+
+    .wrapper__name {
+        width: max-content;
+        height: max-content;
+        margin: 0 auto;
+        font-family: "Unbounded-Bold";
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .wrapper__avatar {
+        width: max-content;
+        height: max-content;
+        display: block;
+        margin: 9px auto 18px auto;
+    }
+    .wrapper__type {
+        width: max-content;
+        height: max-content;
+        padding: 9px 23px;
+        margin: 0 auto;
+        border-radius: 15px;
+        font-family: "Unbounded-Regular";
+        font-size: 16px;
+        font-weight: light;
+        color: var(--main-black);
+        background-color: var(--bg-blue);
+    }
+    .wrapper__descr {
+        width: max-content;
+        max-width: 317px;
+        height: max-content;
+        margin: 24px auto;
+        font-family: "Unbounded-Regular";
+        font-size: 14px;
+        font-weight: light;
+        text-align: center;
+        color: var(--main-white);
+    }
+}

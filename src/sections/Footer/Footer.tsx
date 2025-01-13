@@ -1,24 +1,24 @@
 import FooterButton from "@/components/FooterButton/FooterButton";
 import style from "./Footer.module.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { getPhrase } from "@/i18n";
 import { useState } from "react";
 import { NAVIGATION_LINKS } from "@/constants/navigation";
 import { useNavigate } from "react-router-dom";
-import { Languages } from "@/store/slices/languages/types";
-import { setLang } from "@/store/slices/languages";
-import TextButton from "@/components/TextButton/TextButton";
+// import { Languages } from "@/store/slices/languages/types";
+// import { setLang } from "@/store/slices/languages";
+// import TextButton from "@/components/TextButton/TextButton";
 
 const Footer = () => {
     const navigate = useNavigate();
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const { lang } = useSelector((state: RootState) => state.languagesReducer);
     const [activeButton, setActiveButton] = useState<NAVIGATION_LINKS>(NAVIGATION_LINKS.Welcome);
 
-    const setActiveLang = (lang: Languages) => {
-        dispatch(setLang(lang));
-    };
+    // const setActiveLang = (lang: Languages) => {
+    //     dispatch(setLang(lang));
+    // };
 
     const handleFooterButton = (link: NAVIGATION_LINKS) => {
         navigate(link);
@@ -47,7 +47,7 @@ const Footer = () => {
                     activeText={getPhrase(lang, "footerZone")}
                 />         
             </section>     
-            <section className={style.wrapper__language}>
+            {/* <section className={style.wrapper__language}>
                 <TextButton
                     isActive={lang === Languages.ru}
                     text={"ру"}
@@ -58,7 +58,7 @@ const Footer = () => {
                     text={"en"}
                     onClick={() => setActiveLang(Languages.en)}
                 />
-            </section>          
+            </section>           */}
         </footer>
     );
 };
