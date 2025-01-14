@@ -21,7 +21,14 @@ const DeviceType: FC<I_DeviceTypeProps> = ({
                 />
                 <p className={styles.block__text}>{title}</p>
             </div>
-            <span className={styles.wrapper__text}>[ {text} ]</span>
+            <div className={styles.wrapper__arrow}>
+                <span className={styles.arrow__text}>[ {text} ]</span>
+                <img 
+                    src="/icons/arrow.svg" 
+                    alt="Arrow icon" 
+                    className={styles.arrow__img}
+                />
+            </div>
         </div>
     );
 };

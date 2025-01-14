@@ -24,13 +24,26 @@
             color: var(--main-grey);
         }
     }
-    .wrapper__text {
+    .wrapper__arrow {
         width: max-content;
         height: max-content;
-        display: block;
         margin: 0 auto;
-        font-family: "Unbounded-Regular";
-        font-weight: light;
-        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    
+        .arrow__text {
+            width: max-content;
+            height: max-content;
+            display: block;
+            font-family: "Unbounded-Regular";
+            font-weight: light;
+            font-size: 16px;
+        }
+        .arrow__img {
+            width: max-content;
+            height: max-content;
+        }
     }
 }

@@ -2,7 +2,7 @@ import DeviceType from "@/components/DeviceType/DeviceType";
 import AuthorDescription from "@/sections/AuthorDescription/AuthorDescription";
 import { Swiper, SwiperSlide } from "swiper/react";
 import images from "@/constants/images";
-// import "swiper/css";
+import "swiper/swiper-bundle.css";
 
 const Main = () => {
 
@@ -16,22 +16,13 @@ const Main = () => {
                 style={{ margin: "0 auto" }}    
             />
             <Swiper
-              spaceBetween={28}
-              slidesPerView={1}
-              style={{
-                width: "329px !important",
-                height: "max-content",
-                marginTop: 18,
-              }}
+                spaceBetween={28}
+                style={{ margin: "18px auto" }}
             >
             {
                 images.map((el, idx) => 
                     <SwiperSlide
                         key={idx}
-                        style={{
-                            width: "329px !important",
-                            height: "max-content",
-                          }}
                     >
                         <img src={el} style={{ maxWidth: 329 }} />
                     </SwiperSlide>
