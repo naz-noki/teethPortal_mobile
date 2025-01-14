@@ -7,8 +7,8 @@ import "swiper/swiper-bundle.css";
 const Main = () => {
 
     return (
-        <div style={{ maxWidth: 329, margin: "0 auto" }}>
-            <AuthorDescription />
+        <main style={{ maxWidth: 329, margin: "0px auto 118px auto" }}>
+            <AuthorDescription style={{ marginTop: 35 }} />
             <DeviceType 
                 title={"Canon PowerShot A550"}
                 text={"фотоальбом"} 
@@ -29,7 +29,7 @@ const Main = () => {
                 )
             }
             </Swiper>
-        </div>
+        </main>
     );
 };
 
