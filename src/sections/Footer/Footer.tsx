@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { getPhrase } from "@/i18n";
 import { useState } from "react";
-import { NAVIGATION_LINKS } from "@/constants/navigation";
+import { getNavigationLink, NAVIGATION_LINKS } from "@/constants/navigation";
 import { useNavigate } from "react-router-dom";
 // import { Languages } from "@/store/slices/languages/types";
 // import { setLang } from "@/store/slices/languages";
@@ -21,7 +21,7 @@ const Footer = () => {
     // };
 
     const handleFooterButton = (link: NAVIGATION_LINKS) => {
-        navigate(link);
+        navigate(getNavigationLink(link));
         setActiveButton(link);
     }; 
 
