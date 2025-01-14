@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom";
 import { setIsDefault, setLang } from "./store/slices/languages";
 import { RootState } from "./store/store";
 import Footer from "./sections/Footer/Footer";
-import { relative } from "path";
 
 const App = () => {
   const { isDefault } = useSelector((state: RootState) => state.languagesReducer);

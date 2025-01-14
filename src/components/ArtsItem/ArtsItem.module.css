@@ -1,0 +1,27 @@
+.wrapper {
+    width: max-content;
+    max-width: 90%;
+    height: max-content;
+    margin: 15px auto;
+
+    .wrapper__img {
+        width: max-content;
+        max-width: 100%;
+        height: max-content;
+        margin: 0 auto;
+    }
+    .wrapper__text {
+        width: max-content;
+        height: max-content;
+        margin: 15px auto;
+        font-family: "Unbounded-Regular";
+        font-weight: light;
+        font-size: 16px;
+    }
+    .wrapper__icon {
+        width: max-content;
+        height: max-content;
+        display: block;
+        margin: 0 auto;
+    }
+}

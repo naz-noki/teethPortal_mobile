@@ -3,28 +3,28 @@
 @import url("./variables.css");
 
 @font-face {
-    font-family: 'Unbounded-Regular';
-    src: url('../fonts/Unbounded/Unbounded-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: "Unbounded-Regular";
+    src: url("../fonts/Unbounded/Unbounded-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: 'Unbounded-Bold';
-    src: url('../fonts/Unbounded/Unbounded-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: "Unbounded-Bold";
+    src: url("../fonts/Unbounded/Unbounded-Bold.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: 'Caesar-Dressing';
-    src: url('../fonts/CaesarDressing/caesar-dressing-cyrillic.otf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: "Caesar-Dressing";
+    src: url("../fonts/CaesarDressing/caesar-dressing-cyrillic.otf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: 'Rock-Salt';
-    src: url('../fonts/RockSalt/RockSalt-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: "Rock-Salt";
+    src: url("../fonts/RockSalt/RockSalt-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: 'New-Cyrillic-Goth';
-    src: url('../fonts/NewCyrillicGoth/NewCyrillicGoth-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: "New-Cyrillic-Goth";
+    src: url("../fonts/NewCyrillicGoth/NewCyrillicGoth-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 html, body {

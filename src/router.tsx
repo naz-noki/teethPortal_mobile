@@ -1,9 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
-import Main from "./pages/Main/Main";
-import { getNavigationLink, NAVIGATION_LINKS } from "./constants/navigation";
-import Faq from "./store/slices/pages/Faq/Faq";
-import Favorite from "./store/slices/pages/Favorite/Favorite";
+import App from "@/App";
+import Main from "@/pages/Main/Main";
+import { getNavigationLink, NAVIGATION_LINKS } from "@/constants/navigation";
+import Favorite from "@/pages/Favorite/Favorite";
 
 const router = createBrowserRouter([
     {
@@ -14,10 +13,10 @@ const router = createBrowserRouter([
                 path: getNavigationLink(NAVIGATION_LINKS.Welcome),
                 element: <Main />,
             },
-            {
-                path: getNavigationLink(NAVIGATION_LINKS.FAQ),
-                element: <Faq />,
-            },
+            // {
+            //     path: getNavigationLink(NAVIGATION_LINKS.FAQ),
+            //     element: <Faq />,
+            // },
             {
                 path: getNavigationLink(NAVIGATION_LINKS.Favorite),
                 element: <Favorite />,
