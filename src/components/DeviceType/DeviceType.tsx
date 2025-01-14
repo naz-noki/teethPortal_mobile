@@ -24,7 +24,7 @@ const DeviceType: FC<I_DeviceTypeProps> = ({
             <div className={styles.wrapper__arrow}>
                 <span className={styles.arrow__text}>[ {text} ]</span>
                 <img 
-                    src="/icons/arrow.svg" 
+                    src="/teethPortal_mobile/icons/arrow.svg" 
                     alt="Arrow icon" 
                     className={styles.arrow__img}
                 />

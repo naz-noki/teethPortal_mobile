@@ -12,7 +12,7 @@ const Main = () => {
             <DeviceType 
                 title={"Canon PowerShot A550"}
                 text={"фотоальбом"} 
-                iconPath={"/images/photoporat.svg"} 
+                iconPath={"/teethPortal_mobile/images/photoporat.svg"} 
                 style={{ margin: "0 auto" }}    
             />
             <Swiper

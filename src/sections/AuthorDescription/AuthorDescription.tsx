@@ -5,7 +5,7 @@ const AuthorDescription = () => {
     return (
         <section className={styles.wrapper}>
             <h1 className={styles.wrapper__name}>милу</h1>
-            <img className={styles.wrapper__avatar} src={"/images/milu.svg"} />
+            <img className={styles.wrapper__avatar} src={"/teethPortal_mobile/images/milu.svg"} />
             <div className={styles.wrapper__type}>Художник</div>
             <p className={styles.wrapper__descr}>
                 с практическими навыками работы
