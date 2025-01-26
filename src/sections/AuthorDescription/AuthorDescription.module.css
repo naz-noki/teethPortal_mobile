@@ -15,8 +15,9 @@
     }
     .wrapper__avatar {
         width: max-content;
-        width: 67px;
+        max-width: 67px;
         height: max-content;
+        max-height: 130px;
         display: block;
         margin: 9px auto 18px auto;
     }
