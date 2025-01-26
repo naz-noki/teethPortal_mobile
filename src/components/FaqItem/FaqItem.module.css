@@ -1,0 +1,31 @@
+@import url("../../assets/styles/style.css");
+
+.wrapper {
+    width: max-content;
+    max-width: 376px;
+    height: max-content;
+    margin: 15px auto;
+    position: relative;
+    display: block;
+
+    .wrapper__title {
+        width: 80%;
+        max-width: 317px;
+        height: max-content;
+        font-family: "Century-Gothic-Bold-Italic";
+        font-style: italic;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--main-white);
+    }
+    .wrapper__content {
+        width: 85%;
+        max-width: 355px;
+        height: max-content;
+        font-family: "Century-Gothic";
+        font-weight: lighter;
+        font-size: 16px;
+        color: var(--main-white);
+        margin: 13px 0px 0px 21px;
+    }
+}

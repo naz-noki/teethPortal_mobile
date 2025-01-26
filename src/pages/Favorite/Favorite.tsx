@@ -1,10 +1,15 @@
-import ArtsList from "@/sections/ArtsList/ArtsList";
+import styles from "@/pages/Favorite/Favorite.module.css";
 
 const Favorite = () => {
 
     return (
-        <main style={{ maxWidth: 329, margin: "0px auto 118px auto" }}>
-            <ArtsList />
+        <main className={styles.wrapper}>
+            <img className={styles.wrapper__img} src={"/teethPortal_mobile/gif/comeBack.gif"} />
+            <p className={styles.wrapper__text}>
+                раздел временно недоступен. 
+                скоро появится возможность добавлять 
+                работы в избранное
+            </p>
         </main>
     );
 };

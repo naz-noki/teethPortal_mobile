@@ -18,13 +18,13 @@ const AuthorDescription: FC<I_AuthorDescriptionProps> = ({
             style={style}
         >
             <h1 className={styles.wrapper__name}>милу</h1>
-            <img className={styles.wrapper__avatar} src={"/teethPortal_mobile/images/milu.svg"} />
+            <img className={styles.wrapper__avatar} src={"/teethPortal_mobile/gif/avatar.gif"} />
             <div className={styles.wrapper__type}>Художник</div>
             <p className={styles.wrapper__descr}>
                 с практическими навыками работы
                 графическим дизайнером
-                и теоретическими – в области 
-                управления персоналом
+                и теоретическими знаниями 
+                в  области управления персоналом
             </p>
         </section>
     );

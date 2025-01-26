@@ -15,6 +15,7 @@
     }
     .wrapper__avatar {
         width: max-content;
+        width: 67px;
         height: max-content;
         display: block;
         margin: 9px auto 18px auto;
@@ -36,9 +37,9 @@
         max-width: 317px;
         height: max-content;
         margin: 24px auto;
-        font-family: "Unbounded-Regular";
+        font-family: "Century-Gothic";
         font-size: 14px;
-        font-weight: light;
+        font-weight: lighter;
         text-align: center;
         color: var(--main-white);
     }

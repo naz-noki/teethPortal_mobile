@@ -3,6 +3,16 @@
 @import url("./variables.css");
 
 @font-face {
+    font-family: "Century-Gothic-Bold-Italic";
+    src: url("../fonts/Century-Gothic/centurygothic_italic-bold.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Century-Gothic";
+    src: url("../fonts/Century-Gothic/centurygothic.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
     font-family: "Unbounded-Regular";
     src: url("../fonts/Unbounded/Unbounded-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
@@ -14,7 +24,7 @@
 
 @font-face {
     font-family: "Caesar-Dressing";
-    src: url("../fonts/CaesarDressing/caesar-dressing-cyrillic.otf")  format("truetype"); /* Safari, Android, iOS */
+    src: url("../fonts/Caesar-Dressing/caesar-dressing-cyrillic.otf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {

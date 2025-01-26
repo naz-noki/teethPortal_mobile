@@ -1,18 +1,26 @@
 import ArtsItem from "@/components/ArtsItem/ArtsItem";
 import arts from "@/constants/arts";
 import styles from "@/sections/ArtsList/ArtsList.module.css";
+import { FC, HTMLAttributes } from "react";
 
-const ArtsList = () => {
+interface I_ArtsListProps extends HTMLAttributes<HTMLDivElement> {};
+
+const ArtsList: FC<I_ArtsListProps> = ({
+    className, style,
+}) => {
 
     return (
-        <div className={styles.wrapper}>
+        <div className={`${styles.wrapper} ${className && className}`} style={style}>
         {
             arts.map((el, idx) => 
                 <ArtsItem 
                     id={el.id}
                     key={el.id}
                     title={el.title}
-                    fileId={el.fileId}
+                    year={el.year}
+                    material={el.material}
+                    size={el.size}
+                    fileIds={el.fileIds}
                     showArrow={idx !== arts.length-1}
                 />
             )

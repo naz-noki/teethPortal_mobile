@@ -1,0 +1,27 @@
+@import url("../../assets/styles/style.css");
+
+.wrapper {
+    width: 100%;
+    min-height: 90vh;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+
+    .wrapper__img {
+        width: 164px;
+        height: auto;
+    }
+    .wrapper__text {
+        width: max-content;
+        max-width: 243px;
+        height: max-content;
+        margin: 24px auto;
+        font-family: "Century-Gothic";
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+        color: var(--main-white);
+    }
+}
