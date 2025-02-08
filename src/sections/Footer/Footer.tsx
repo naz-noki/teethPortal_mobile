@@ -43,7 +43,7 @@ const Footer = () => {
                 <FooterButton 
                     onClick={() => handleFooterButton(NAVIGATION_LINKS.Favorite)}
                     isActive={activeButton === NAVIGATION_LINKS.Favorite}                
-                    title={getPhrase(lang, "footerFavorite")}
+                    title={activeButton === NAVIGATION_LINKS.Favorite ? getPhrase(lang, "footerFavoriteActive") : getPhrase(lang, "footerFavorite")}
                     activeText={getPhrase(lang, "footerZone")}
                 />         
             </section>     

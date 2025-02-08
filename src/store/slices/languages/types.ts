@@ -9,6 +9,7 @@ export interface I_Phrases {
   footerFAQ: string; 
   footerWelcome: string; 
   footerFavorite: string;
+  footerFavoriteActive: string;
 };
 
 export interface I_InitialState {

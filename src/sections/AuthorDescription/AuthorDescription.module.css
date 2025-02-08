@@ -21,23 +21,40 @@
         display: block;
         margin: 9px auto 18px auto;
     }
-    .wrapper__type {
-        width: max-content;
-        height: max-content;
-        padding: 9px 23px;
-        margin: 0 auto;
-        border-radius: 15px;
-        font-family: "Unbounded-Regular";
-        font-size: 16px;
-        font-weight: light;
-        color: var(--main-black);
-        background-color: var(--bg-blue);
+    .wrapper__type_link {
+        text-decoration: none;
+        
+        .wrapper__type {
+            width: max-content;
+            height: max-content;
+            max-height: 36px;
+            padding-left: 23px;
+            margin: 0 auto;
+            border-radius: 15px;
+            background-color: var(--bg-blue);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .wrapper__type_text {
+                width: max-content;
+                height: max-content;
+                font-family: "Unbounded-Regular";
+                font-size: 16px;
+                font-weight: light;
+                color: var(--main-black);
+            }
+            .wrapper__type_icon {
+                width: 43px;
+                height: 43px;
+            }
+        }
     }
     .wrapper__descr {
         width: max-content;
         max-width: 317px;
         height: max-content;
-        margin: 24px auto;
+        margin: 20px auto 0px auto;
         font-family: "Century-Gothic";
         font-size: 14px;
         font-weight: lighter;
