@@ -1,3 +1,10 @@
+export enum ART_TYPES {
+    Paintings = "картины",
+    Drawings = "рисунки",
+    Digital = "диджитал",    
+    Photos = "фото",
+};
+
 export default [
     {
         id: "1",
