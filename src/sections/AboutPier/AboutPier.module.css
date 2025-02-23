@@ -2,11 +2,17 @@
   width: max-content;
   height: max-content;
   max-width: 100%;
+  position: relative;
 
   .wrapper__img {
     width: max-content;
     height: max-content;
-    margin: 25px auto;
     display: block;
+    opacity: 0;
+    transition: 350ms;
+  }
+  .wrapper__img_active {
+    transition: 350ms;
+    opacity: 1;
   }
 }

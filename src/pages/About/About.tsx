@@ -43,7 +43,7 @@ const About = () => {
     for (const section of sections) {
       if (section.element) {
         const rect = section.element.getBoundingClientRect();
-        const offset = 65;
+        const offset = 75;
 
         if (rect.top <= offset && rect.bottom >= offset) {
           setActiveTab(section.id);

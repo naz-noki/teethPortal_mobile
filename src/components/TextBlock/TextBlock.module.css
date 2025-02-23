@@ -1,7 +1,7 @@
 .wrapper {
   width: max-content;
   height: max-content;
-  max-width: 100%;
+  max-width: 90%;
   font-family: "Century-Gothic";
   font-size: 14px;
   color: var(--main-white);
