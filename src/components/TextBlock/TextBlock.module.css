@@ -1,0 +1,10 @@
+.wrapper {
+  width: max-content;
+  height: max-content;
+  max-width: 100%;
+  font-family: "Century-Gothic";
+  font-size: 14px;
+  color: var(--main-white);
+  word-break: keep-all;
+  line-height: 150%;
+}

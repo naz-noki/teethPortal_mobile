@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ART_TYPES, ARTS, ArtsTabBar } from "@/constants/arts";
 import { SOCIAL_LINKS } from "@/constants/links";
 import TabBar from "@/components/TabBar/TabBar";
+import styles from "@/pages/Main/Main.module.css";
 
 const Main = () => {
   const [activeArtType, setActiveArtType] = useState<ART_TYPES>(
@@ -19,7 +20,7 @@ const Main = () => {
   };
 
   return (
-    <main style={{ maxWidth: 375, margin: "0px auto 118px auto" }}>
+    <main className={styles.wrapper}>
       <AuthorDescription style={{ marginTop: 35 }} />
       <TabBar
         items={ArtsTabBar}

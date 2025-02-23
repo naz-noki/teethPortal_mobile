@@ -11,43 +11,49 @@ import { useNavigate } from "react-router-dom";
 // import TextButton from "@/components/TextButton/TextButton";
 
 const Footer = () => {
-    const navigate = useNavigate();
-    // const dispatch = useDispatch();
-    const { lang } = useSelector((state: RootState) => state.languagesReducer);
-    const [activeButton, setActiveButton] = useState<NAVIGATION_LINKS>(NAVIGATION_LINKS.Welcome);
+  const navigate = useNavigate();
+  // const dispatch = useDispatch();
+  const { lang } = useSelector((state: RootState) => state.languagesReducer);
+  const [activeButton, setActiveButton] = useState<NAVIGATION_LINKS>(
+    NAVIGATION_LINKS.Welcome
+  );
 
-    // const setActiveLang = (lang: Languages) => {
-    //     dispatch(setLang(lang));
-    // };
+  // const setActiveLang = (lang: Languages) => {
+  //     dispatch(setLang(lang));
+  // };
 
-    const handleFooterButton = (link: NAVIGATION_LINKS) => {
-        navigate(getNavigationLink(link));
-        setActiveButton(link);
-    }; 
+  const handleFooterButton = (link: NAVIGATION_LINKS) => {
+    navigate(getNavigationLink(link));
+    setActiveButton(link);
+  };
 
-    return (
-        <footer className={style.wrapper}>
-            <section className={style.wrapper__navigation}>
-                <FooterButton 
-                    onClick={() => handleFooterButton(NAVIGATION_LINKS.FAQ)}
-                    isActive={activeButton === NAVIGATION_LINKS.FAQ}
-                    title={getPhrase(lang, "footerFAQ")}
-                    activeText={getPhrase(lang, "footerZone")}
-                />
-                <FooterButton 
-                    onClick={() => handleFooterButton(NAVIGATION_LINKS.Welcome)}
-                    isActive={activeButton === NAVIGATION_LINKS.Welcome}                
-                    title={getPhrase(lang, "footerWelcome")}
-                    activeText={getPhrase(lang, "footerZone")}
-                />
-                <FooterButton 
-                    onClick={() => handleFooterButton(NAVIGATION_LINKS.Favorite)}
-                    isActive={activeButton === NAVIGATION_LINKS.Favorite}                
-                    title={activeButton === NAVIGATION_LINKS.Favorite ? getPhrase(lang, "footerFavoriteActive") : getPhrase(lang, "footerFavorite")}
-                    activeText={getPhrase(lang, "footerZone")}
-                />         
-            </section>     
-            {/* <section className={style.wrapper__language}>
+  return (
+    <footer className={style.wrapper}>
+      <section className={style.wrapper__navigation}>
+        <FooterButton
+          onClick={() => handleFooterButton(NAVIGATION_LINKS.About)}
+          isActive={activeButton === NAVIGATION_LINKS.About}
+          title={getPhrase(lang, "footerFAQ")}
+          activeText={getPhrase(lang, "footerZone")}
+        />
+        <FooterButton
+          onClick={() => handleFooterButton(NAVIGATION_LINKS.Welcome)}
+          isActive={activeButton === NAVIGATION_LINKS.Welcome}
+          title={getPhrase(lang, "footerWelcome")}
+          activeText={getPhrase(lang, "footerZone")}
+        />
+        <FooterButton
+          onClick={() => handleFooterButton(NAVIGATION_LINKS.Favorite)}
+          isActive={activeButton === NAVIGATION_LINKS.Favorite}
+          title={
+            activeButton === NAVIGATION_LINKS.Favorite
+              ? getPhrase(lang, "footerFavoriteActive")
+              : getPhrase(lang, "footerFavorite")
+          }
+          activeText={getPhrase(lang, "footerZone")}
+        />
+      </section>
+      {/* <section className={style.wrapper__language}>
                 <TextButton
                     isActive={lang === Languages.ru}
                     text={"ру"}
@@ -59,8 +65,8 @@ const Footer = () => {
                     onClick={() => setActiveLang(Languages.en)}
                 />
             </section>           */}
-        </footer>
-    );
+    </footer>
+  );
 };
 
 export default Footer;

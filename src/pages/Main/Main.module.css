@@ -1,9 +1,4 @@
 .wrapper {
-    width: 100%;
-    min-height: 90vh;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column;
+  max-width: 375px;
+  margin: 0px auto 118px auto;
 }
