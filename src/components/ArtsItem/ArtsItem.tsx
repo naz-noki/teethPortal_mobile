@@ -19,10 +19,10 @@ const ArtsItem: FC<I_ArtsItemProps> = ({
       className={`${styles.wrapper} ${className && className}`}
       style={style}
     >
-      <Swiper spaceBetween={28} style={{ margin: "18px auto" }}>
+      <Swiper spaceBetween={28} className={styles.wrapper__slider}>
         {item.fileIds.map((el, idx) => (
-          <SwiperSlide key={idx}>
-            <img src={el} style={{ maxWidth: 329, maxHeight: 485 }} />
+          <SwiperSlide key={idx} className={styles.wrapper__slider_slide}>
+            <img src={el} className={styles.wrapper__slider_img} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -35,6 +35,17 @@ const ArtsItem: FC<I_ArtsItemProps> = ({
           <p className={styles.wrapper__info_text}>{item.base}</p>
           <p className={styles.wrapper__info_text}>{item.size}</p>
         </div>
+        <div className={styles.wrapper__info_block}>
+          <p className={styles.wrapper__info_text}>{item.material}</p>
+        </div>
+        {item.price && (
+          <div
+            className={styles.wrapper__info_block}
+            style={{ justifyContent: "right" }}
+          >
+            <p className={styles.wrapper__info_price}>{item.price}</p>
+          </div>
+        )}
       </div>
       {showArrow && (
         <img
