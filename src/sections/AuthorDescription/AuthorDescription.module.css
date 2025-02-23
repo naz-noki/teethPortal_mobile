@@ -1,65 +1,65 @@
 @import url("../../assets/styles/style.css");
 
 .wrapper {
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+
+  .wrapper__name {
     width: max-content;
     height: max-content;
     margin: 0 auto;
+    font-family: "Unbounded-Bold";
+    font-size: 32px;
+    font-weight: 900;
+  }
+  .wrapper__avatar {
+    width: max-content;
+    max-width: 67px;
+    height: max-content;
+    max-height: 130px;
+    display: block;
+    margin: 9px auto 18px auto;
+  }
+  .wrapper__type_link {
+    text-decoration: none;
 
-    .wrapper__name {
-        width: max-content;
-        height: max-content;
-        margin: 0 auto;
-        font-family: "Unbounded-Bold";
-        font-size: 32px;
-        font-weight: 900;
-    }
-    .wrapper__avatar {
-        width: max-content;
-        max-width: 67px;
-        height: max-content;
-        max-height: 130px;
-        display: block;
-        margin: 9px auto 18px auto;
-    }
-    .wrapper__type_link {
-        text-decoration: none;
-        
-        .wrapper__type {
-            width: max-content;
-            height: max-content;
-            max-height: 36px;
-            padding-left: 23px;
-            margin: 0 auto;
-            border-radius: 15px;
-            background-color: var(--bg-blue);
-            display: flex;
-            align-items: center;
-            gap: 6px;
+    .wrapper__type {
+      width: max-content;
+      height: max-content;
+      max-height: 36px;
+      padding-left: 23px;
+      margin: 0 auto;
+      border-radius: 15px;
+      background-color: var(--bg-blue);
+      display: flex;
+      align-items: center;
+      gap: 6px;
 
-            .wrapper__type_text {
-                width: max-content;
-                height: max-content;
-                font-family: "Unbounded-Regular";
-                font-size: 16px;
-                font-weight: light;
-                color: var(--main-black);
-            }
-            .wrapper__type_icon {
-                width: 43px;
-                height: 43px;
-            }
-        }
-    }
-    .wrapper__descr {
+      .wrapper__type_text {
         width: max-content;
-        max-width: 317px;
         height: max-content;
-        margin: 20px auto 0px auto;
-        font-family: "Century-Gothic";
-        font-size: 14px;
-        font-weight: lighter;
-        text-align: center;
-        line-height: 20px;
-        color: var(--main-white);
+        font-family: "Unbounded-Regular";
+        font-size: 16px;
+        font-weight: light;
+        color: var(--main-black);
+      }
+      .wrapper__type_icon {
+        width: 43px;
+        height: 43px;
+      }
     }
+  }
+  .wrapper__descr {
+    width: max-content;
+    max-width: 317px;
+    height: max-content;
+    margin: 20px auto 0px auto;
+    font-family: "Century-Gothic";
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 20px;
+    color: var(--main-white);
+  }
 }

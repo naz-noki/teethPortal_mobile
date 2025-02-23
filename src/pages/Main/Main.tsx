@@ -2,8 +2,9 @@ import AuthorDescription from "@/sections/AuthorDescription/AuthorDescription";
 import ArtsList from "@/sections/ArtsList/ArtsList";
 import "swiper/swiper-bundle.css";
 import { useState } from "react";
-import { ART_TYPES, paintings } from "@/constants/arts";
+import { ART_TYPES, ARTS, ArtsTabBar } from "@/constants/arts";
 import { SOCIAL_LINKS } from "@/constants/links";
+import TabBar from "@/components/TabBar/TabBar";
 
 const Main = () => {
   const [activeArtType, setActiveArtType] = useState<ART_TYPES>(
@@ -11,15 +12,22 @@ const Main = () => {
   );
 
   const handleActiveArtType = (value: ART_TYPES) => {
-    setActiveArtType(value);
-    if (value === ART_TYPES.Photos)
+    if (value === ART_TYPES.Photos) {
       window.open(SOCIAL_LINKS.Pinterest, "_blank");
+      setActiveArtType(ART_TYPES.Paintings);
+    } else setActiveArtType(value);
   };
 
   return (
-    <main style={{ maxWidth: 329, margin: "0px auto 118px auto" }}>
+    <main style={{ maxWidth: 375, margin: "0px auto 118px auto" }}>
       <AuthorDescription style={{ marginTop: 35 }} />
-      <ArtsList style={{ marginTop: 46 }} items={paintings} />
+      <TabBar
+        items={ArtsTabBar}
+        activeValue={activeArtType}
+        onUpdate={(value) => handleActiveArtType(value as ART_TYPES)}
+        style={{ margin: "25px auto 0px auto" }}
+      />
+      <ArtsList style={{ marginTop: 46 }} items={ARTS[activeArtType]} />
     </main>
   );
 };
