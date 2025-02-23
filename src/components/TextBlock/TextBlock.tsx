@@ -8,7 +8,7 @@ interface I_TextBlockProps extends HTMLAttributes<HTMLDivElement> {
 const TextBlock: FC<I_TextBlockProps> = ({ text, className, style, id }) => {
   return (
     <p
-      id={id}
+      id={id && id}
       className={`${styles.wrapper} ${className && className}`}
       style={style}
     >

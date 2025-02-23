@@ -1,0 +1,21 @@
+.wrapper {
+  width: max-content;
+  height: max-content;
+  cursor: pointer;
+  padding: 8px 21px;
+  color: var(--main-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: var(--bg-blue);
+  font-family: "Unbounded-Regular";
+  font-size: 14px;
+  font-weight: light;
+  transition: 350ms;
+
+  &:hover {
+    transition: 300ms;
+    color: var(--main-white);
+  }
+}
