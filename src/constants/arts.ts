@@ -33,8 +33,8 @@ export const ArtsTabBar = [
   },
   {
     value: ART_TYPES.Photos,
-    showIcon: true,
-    iconPath: "/teethPortal_mobile/icons/pinterestIcon.png",
+    showIcon: false,
+    iconPath: "",
   },
 ];
 

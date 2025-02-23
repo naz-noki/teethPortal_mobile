@@ -30,7 +30,7 @@
       max-height: 36px;
       padding-left: 23px;
       margin: 0 auto;
-      border-radius: 15px;
+      border-radius: 25px;
       background-color: var(--bg-blue);
       display: flex;
       align-items: center;
@@ -40,7 +40,7 @@
         width: max-content;
         height: max-content;
         font-family: "Unbounded-Regular";
-        font-size: 16px;
+        font-size: 14px;
         font-weight: light;
         color: var(--main-black);
       }

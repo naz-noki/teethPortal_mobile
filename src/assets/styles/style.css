@@ -3,53 +3,63 @@
 @import url("./variables.css");
 
 @font-face {
-    font-family: "Century-Gothic-Bold-Italic";
-    src: url("../fonts/Century-Gothic/centurygothic_italic-bold.ttf")  format("truetype"); /* Safari, Android, iOS */
+  font-family: "Century-Gothic-Bold-Italic";
+  src: url("../fonts/Century-Gothic/centurygothic_italic-bold.ttf")
+    format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: "Century-Gothic";
-    src: url("../fonts/Century-Gothic/centurygothic.ttf")  format("truetype"); /* Safari, Android, iOS */
+  font-family: "Century-Gothic";
+  src: url("../fonts/Century-Gothic/centurygothic.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: "Unbounded-Regular";
-    src: url("../fonts/Unbounded/Unbounded-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
+  font-family: "Unbounded-Regular";
+  src: url("../fonts/Unbounded/Unbounded-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: "Unbounded-Bold";
-    src: url("../fonts/Unbounded/Unbounded-Bold.ttf")  format("truetype"); /* Safari, Android, iOS */
+  font-family: "Unbounded-Bold";
+  src: url("../fonts/Unbounded/Unbounded-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: "Caesar-Dressing";
-    src: url("../fonts/Caesar-Dressing/caesar-dressing-cyrillic.otf")  format("truetype"); /* Safari, Android, iOS */
+  font-family: "Unbounded-Light";
+  src: url("../fonts/Unbounded/Unbounded-Light.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: "Rock-Salt";
-    src: url("../fonts/RockSalt/RockSalt-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
+  font-family: "Caesar-Dressing";
+  src: url("../fonts/Caesar-Dressing/caesar-dressing-cyrillic.otf")
+    format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: "New-Cyrillic-Goth";
-    src: url("../fonts/NewCyrillicGoth/NewCyrillicGoth-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
+  font-family: "Rock-Salt";
+  src: url("../fonts/RockSalt/RockSalt-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-html, body {
-    max-width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden !important;
-    background-color: var(--main-black);
-    color: var(--main-white);
-    scroll-behavior: smooth;  
+@font-face {
+  font-family: "New-Cyrillic-Goth";
+  src: url("../fonts/NewCyrillicGoth/NewCyrillicGoth-Regular.ttf")
+    format("truetype"); /* Safari, Android, iOS */
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden !important;
+  background-color: var(--main-black);
+  color: var(--main-white);
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
-input::placeholder, textarea::placeholder {
-    color: black; 
+input::placeholder,
+textarea::placeholder {
+  color: black;
 }
