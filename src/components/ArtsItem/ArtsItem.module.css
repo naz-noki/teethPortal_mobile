@@ -6,23 +6,41 @@
   display: block;
   margin: 15px auto;
 
-  .wrapper__slider {
-    margin: 18px auto;
+  .wrapper__slider_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 
-    .wrapper__slider_slide {
+    .wrapper__slider_icon {
       width: max-content;
       height: max-content;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: visible;
+      opacity: 0;
+      transition: 350ms;
+    }
+    .wrapper__slider_icon_active {
+      transition: 350ms;
+      cursor: pointer;
+      opacity: 1;
+    }
+    .wrapper__slider {
+      margin: 18px auto;
 
-      .wrapper__slider_img {
+      .wrapper__slider_slide {
         width: max-content;
         height: max-content;
-        max-width: 100%;
-        max-height: 485px;
-        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+
+        .wrapper__slider_img {
+          width: max-content;
+          height: max-content;
+          max-width: 100%;
+          max-height: 485px;
+          object-fit: contain;
+        }
       }
     }
   }
