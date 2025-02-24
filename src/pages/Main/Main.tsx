@@ -6,6 +6,7 @@ import { ART_TYPES, ARTS, ArtsTabBar } from "@/constants/arts";
 import { SOCIAL_LINKS } from "@/constants/links";
 import TabBar from "@/components/TabBar/TabBar";
 import styles from "@/pages/Main/Main.module.css";
+import ScrollTopButton from "@/sections/ScrollTopButton/ScrollTopButton";
 
 const Main = () => {
   const [activeArtType, setActiveArtType] = useState<ART_TYPES>(
@@ -29,6 +30,7 @@ const Main = () => {
         style={{ margin: "25px auto 0px auto" }}
       />
       <ArtsList style={{ marginTop: 46 }} items={ARTS[activeArtType]} />
+      <ScrollTopButton />
     </main>
   );
 };

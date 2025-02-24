@@ -1,0 +1,25 @@
+.wrapper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+  bottom: 130px;
+  right: 10px;
+  border-radius: 25px;
+  background-color: var(--bg-blue);
+  opacity: 0;
+  transition: 350ms;
+
+  .wrapper__img {
+    width: max-content;
+    height: max-content;
+  }
+}
+
+.wrapper__active {
+  transition: 350ms;
+  opacity: 0.75;
+}
