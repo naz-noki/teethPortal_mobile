@@ -4,6 +4,7 @@ import TextBlock from "@/components/TextBlock/TextBlock";
 import { ABOUT_SECTIONS, AboutTabBar, content } from "@/constants/about";
 import styles from "@/pages/About/About.module.css";
 import AboutPier from "@/sections/AboutPier/AboutPier";
+import PriceList from "@/sections/PriceList/PriceList";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState<ABOUT_SECTIONS>(
@@ -33,6 +34,10 @@ const About = () => {
       {
         id: ABOUT_SECTIONS.Myth,
         element: document.getElementById(`AboutPage-${ABOUT_SECTIONS.Myth}`),
+      },
+      {
+        id: ABOUT_SECTIONS.Price,
+        element: document.getElementById(`AboutPage-${ABOUT_SECTIONS.Price}`),
       },
       {
         id: ABOUT_SECTIONS.Pier,
@@ -71,7 +76,7 @@ const About = () => {
       <img
         className={styles.wrapper__img}
         src="/teethPortal_mobile/images/IMG_9560 (1) 1.png"
-        style={{ marginTop: 65 }}
+        style={{ marginTop: 0 }}
       />
       <TextBlock
         text={content[0]}
@@ -98,6 +103,10 @@ const About = () => {
       <TextBlock text={content[10]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[11]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[12]} style={{ margin: "20px auto" }} />
+      <PriceList
+        id={`AboutPage-${ABOUT_SECTIONS.Price}`}
+        style={{ margin: "35px auto" }}
+      />
       <AboutPier id={`AboutPage-${ABOUT_SECTIONS.Pier}`} />
     </main>
   );

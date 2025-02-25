@@ -47,7 +47,7 @@
   .wrapper__info {
     width: 100%;
     height: max-content;
-    margin: 21px auto;
+    margin: 0px auto 21px auto;
 
     .wrapper__info_block {
       width: 100%;

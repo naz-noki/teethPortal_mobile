@@ -67,8 +67,8 @@ const paintings: I_Art[] = [
     material: "акрил",
     base: "холст на картоне",
     fileIds: [
-      "/teethPortal_mobile/images/энергия_1.png",
-      "/teethPortal_mobile/images/энергия_2.png",
+      "/teethPortal_mobile/images/энергия_1.PNG",
+      "/teethPortal_mobile/images/энергия_2.PNG",
     ],
   },
   {
@@ -108,7 +108,7 @@ const paintings: I_Art[] = [
     price: "8 000 ₽",
     material: "акрил",
     base: "холст на картоне",
-    fileIds: ["/teethPortal_mobile/images/IMG_0404 1.png"],
+    fileIds: ["/teethPortal_mobile/images/IMG_0587.PNG"],
   },
   {
     title: "малиновый рассвет",
@@ -131,14 +131,9 @@ const drawings: I_Art[] = [
     fileIds: ["/teethPortal_mobile/images/танцы в ресторане.png"],
   },
   {
-    title: "потрет шархана",
+    title: "портрет шархана",
     year: 2024,
     fileIds: ["/teethPortal_mobile/images/потрет шархана.png"],
-  },
-  {
-    title: "посмотрим фильм",
-    year: 2024,
-    fileIds: ["/teethPortal_mobile/images/посмотрим фильм.png"],
   },
   {
     title: "красивое лицо. эскиз",
@@ -231,11 +226,6 @@ const drawings: I_Art[] = [
     fileIds: ["/teethPortal_mobile/images/ресницы.png"],
   },
   {
-    title: "жасмин",
-    year: 2023,
-    fileIds: ["/teethPortal_mobile/images/жасмин.png"],
-  },
-  {
     title: "добро пожаловать",
     year: 2023,
     fileIds: ["/teethPortal_mobile/images/добро пожаловать.png"],
@@ -283,7 +273,7 @@ const drawings: I_Art[] = [
   {
     title: "прошлое настоящее будущее",
     year: 2023,
-    fileIds: ["/teethPortal_mobile/images/прошлое настоящее будущее.png"],
+    fileIds: ["/teethPortal_mobile/images/IMG_0589.PNG"],
   },
   {
     title: "обсидиан",
@@ -453,7 +443,7 @@ const digital: I_Art[] = [
   {
     title: "соединение атомов",
     year: 2023,
-    fileIds: ["/teethPortal_mobile/images/соединение атомов.png"],
+    fileIds: ["/teethPortal_mobile/images/соединение атомов.gif"],
   },
   {
     title: "тише, она уснула",
