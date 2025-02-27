@@ -26,6 +26,10 @@
     .wrapper__slider {
       margin: 18px auto;
 
+      & > div {
+        align-items: center;
+      }
+
       .wrapper__slider_slide {
         width: max-content;
         height: max-content;

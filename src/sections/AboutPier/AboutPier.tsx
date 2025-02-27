@@ -26,7 +26,7 @@ const AboutPier: FC<I_AboutPierProps> = ({ className, style, id }) => {
             className={`${styles.wrapper__img} ${
               !isActive && styles.wrapper__img_active
             }`}
-            style={{ margin: "330px auto 0px auto" }}
+            style={{ margin: "0px auto" }}
             src="/teethPortal_mobile/images/IMG_1907 2.png"
           />
           <img

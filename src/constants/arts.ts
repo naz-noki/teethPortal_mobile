@@ -218,6 +218,11 @@ const drawings: I_Art[] = [
   {
     title: "чайки",
     year: 2023,
+    fileIds: ["/teethPortal_mobile/images/чайки.png"],
+  },
+  {
+    title: "я+йа=я",
+    year: 2023,
     fileIds: ["/teethPortal_mobile/images/я+йа=я.png"],
   },
   {
@@ -329,11 +334,6 @@ const drawings: I_Art[] = [
     title: "упадок с элементами ясности",
     year: 2022,
     fileIds: ["/teethPortal_mobile/images/упадок с элементами ясности.png"],
-  },
-  {
-    title: "карие?",
-    year: 2022,
-    fileIds: ["/teethPortal_mobile/images/карие.png"],
   },
   {
     title: "йа – опыт или интерпретация",

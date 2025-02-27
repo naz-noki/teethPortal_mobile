@@ -107,6 +107,10 @@ const About = () => {
         id={`AboutPage-${ABOUT_SECTIONS.Price}`}
         style={{ margin: "35px auto" }}
       />
+      <img
+        className={styles.wrapper__img}
+        src="/teethPortal_mobile/images/IMG_0645.gif"
+      />
       <AboutPier id={`AboutPage-${ABOUT_SECTIONS.Pier}`} />
     </main>
   );
