@@ -109,6 +109,7 @@ const About = () => {
       />
       <img
         className={styles.wrapper__img}
+        style={{ maxHeight: 276 }}
         src="/teethPortal_mobile/images/IMG_0645.gif"
       />
       <AboutPier id={`AboutPage-${ABOUT_SECTIONS.Pier}`} />
