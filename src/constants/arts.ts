@@ -131,11 +131,6 @@ const drawings: I_Art[] = [
     fileIds: ["/teethPortal_mobile/images/танцы в ресторане.png"],
   },
   {
-    title: "портрет шархана",
-    year: 2024,
-    fileIds: ["/teethPortal_mobile/images/потрет шархана.png"],
-  },
-  {
     title: "красивое лицо. эскиз",
     year: 2024,
     fileIds: ["/teethPortal_mobile/images/красивое лицо. эскиз.png"],
