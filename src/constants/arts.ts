@@ -40,6 +40,16 @@ export const ArtsTabBar = [
 
 const paintings: I_Art[] = [
   {
+    title: "уязвимое положение",
+    year: 2025,
+    size: "15x20",
+    material: "масло",
+    base: "холст на картоне",
+    fileIds: [
+      "/teethPortal_mobile/images/уязвимое положение.png",
+    ],
+  },
+  {
     title: "проклятье голубых глаз",
     year: 2025,
     size: "50x50",
