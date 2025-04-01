@@ -40,6 +40,17 @@ export const ArtsTabBar = [
 
 const paintings: I_Art[] = [
   {
+    title: "под деревом",
+    year: 2025,
+    size: "20x30",
+    price: "17 000 ₽",
+    material: "масло",
+    base: "холст на картоне",
+    fileIds: [
+      "/teethPortal_mobile/images/pod_derevom.jpg",
+    ],
+  },
+  {
     title: "уязвимое положение",
     year: 2025,
     size: "15x20",
