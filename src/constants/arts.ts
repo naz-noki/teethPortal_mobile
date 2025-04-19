@@ -43,12 +43,9 @@ const paintings: I_Art[] = [
     title: "под деревом",
     year: 2025,
     size: "20x30",
-    price: "17 000 ₽",
     material: "масло",
     base: "холст на картоне",
-    fileIds: [
-      "/teethPortal_mobile/images/pod_derevom.jpg",
-    ],
+    fileIds: ["/teethPortal_mobile/images/pod_derevom.jpg"],
   },
   {
     title: "уязвимое положение",
@@ -56,9 +53,7 @@ const paintings: I_Art[] = [
     size: "15x20",
     material: "масло",
     base: "холст на картоне",
-    fileIds: [
-      "/teethPortal_mobile/images/уязвимое положение.png",
-    ],
+    fileIds: ["/teethPortal_mobile/images/уязвимое положение.png"],
   },
   {
     title: "проклятье голубых глаз",
