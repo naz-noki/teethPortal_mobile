@@ -6,22 +6,36 @@ import { RootState } from "./store/store";
 import Footer from "./sections/Footer/Footer";
 
 const App = () => {
-  const { isDefault } = useSelector((state: RootState) => state.languagesReducer);
+  const { isDefault } = useSelector(
+    (state: RootState) => state.languagesReducer
+  );
   const dispatch = useDispatch();
+
+  const preventDefault = (e: Event) => {
+    e.preventDefault();
+  };
 
   // Set language
   useEffect(() => {
     // @ts-ignore
     const lang = window?.Telegram?.WebApp?.initDataUnsafe?.user?.language_code;
-    if(!isDefault || !lang) return;
+    if (!isDefault || !lang) return;
     dispatch(setLang(lang), setIsDefault(false));
   }, [isDefault]);
+
+  // Cancel the default browser behavior when trying to open the context menu
+  useEffect(() => {
+    document.addEventListener("contextmenu", preventDefault);
+    return () => {
+      document.removeEventListener("contextmenu", preventDefault);
+    };
+  }, []);
 
   return (
     <>
       <Outlet />
       <Footer />
-    </> 
+    </>
   );
 };
 
