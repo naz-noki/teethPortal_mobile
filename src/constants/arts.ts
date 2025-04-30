@@ -40,6 +40,15 @@ export const ArtsTabBar = [
 
 const paintings: I_Art[] = [
   {
+    title: "приворот",
+    year: 2025,
+    size: "10x10",
+    price: "3 000 ₽",
+    material: "масло",
+    base: "холст на картоне",
+    fileIds: ["/teethPortal_mobile/images/приворот.png"],
+  },
+  {
     title: "под деревом",
     year: 2025,
     size: "20x30",
