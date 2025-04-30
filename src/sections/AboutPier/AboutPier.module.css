@@ -4,15 +4,25 @@
   max-width: 100%;
   position: relative;
 
-  .wrapper__img {
+  .wrapper__img_btn {
     width: max-content;
     height: max-content;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: transparent;
     display: block;
-    opacity: 0;
-    transition: 350ms;
+
+    .wrapper__img {
+      width: max-content;
+      height: max-content;
+      display: block;
+      opacity: 0;
+      transition: 350ms;
+    }
+    .wrapper__img_active {
+      transition: 350ms;
+      opacity: 1;
+    }
   }
-  .wrapper__img_active {
-    transition: 350ms;
-    opacity: 1;
-  }
+
 }

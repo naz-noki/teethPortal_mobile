@@ -20,9 +20,8 @@ const AboutPier: FC<I_AboutPierProps> = ({ className, style, id }) => {
       style={style}
     >
       {
-        <>
+        <button className={styles.wrapper__img_btn} onClick={() => setIsActive((prev) => !prev)}>
           <img
-            onClick={() => setIsActive((prev) => !prev)}
             className={`${styles.wrapper__img} ${
               !isActive && styles.wrapper__img_active
             }`}
@@ -30,14 +29,13 @@ const AboutPier: FC<I_AboutPierProps> = ({ className, style, id }) => {
             src="/teethPortal_mobile/images/IMG_1907 2.png"
           />
           <img
-            onClick={() => setIsActive((prev) => !prev)}
             className={`${styles.wrapper__img} ${
               isActive && styles.wrapper__img_active
             }`}
             style={{ margin: "-200px auto 0px auto" }}
             src="/teethPortal_mobile/images/majakActive.png"
           />
-        </>
+        </button>
       }
       <TextBlock
         text={
