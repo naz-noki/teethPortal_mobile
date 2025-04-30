@@ -144,7 +144,6 @@ const paintings: I_Art[] = [
     fileIds: [
       "/teethPortal_mobile/images/малиновый рассвет_1.png",
       "/teethPortal_mobile/images/малиновый рассвет_2.png",
-      "/teethPortal_mobile/images/малиновый рассвет_3.png",
     ],
   },
 ];
