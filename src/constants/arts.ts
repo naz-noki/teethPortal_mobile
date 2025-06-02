@@ -181,14 +181,14 @@ const drawings: I_Art[] = [
     fileIds: ["/teethPortal_mobile/images/зеркальная.png"],
   },
   {
+    title: "стоящий под деревом",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/стоящий под деревом.png"],
+  },
+  {
     title: "натура номер один",
     year: 2025,
     fileIds: ["/teethPortal_mobile/images/натура номер один.png"],
-  },
-  {
-    title: "стоящий под деревом",
-    year: 2025,
-    fileIds: ["/teethPortal_mobile/images/стоящий_под_деревом.png"],
   },
   {
     title: "танцы в ресторане",
