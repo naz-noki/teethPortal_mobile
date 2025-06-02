@@ -161,6 +161,16 @@ const paintings: I_Art[] = [
 
 const drawings: I_Art[] = [
   {
+    title: "нервные клетки",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/nerveCells.png"],
+  },
+  {
+    title: "стоящий под деревом",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/standingUnderTree.png"],
+  },
+  {
     title: "сухая тушь",
     year: 2025,
     fileIds: ["/teethPortal_mobile/images/сухая тушь.png"],
@@ -174,11 +184,6 @@ const drawings: I_Art[] = [
     title: "зеркальная",
     year: 2025,
     fileIds: ["/teethPortal_mobile/images/зеркальная.png"],
-  },
-  {
-    title: "стоящий под деревом",
-    year: 2025,
-    fileIds: ["/teethPortal_mobile/images/стоящий под деревом.png"],
   },
   {
     title: "натура номер один",
