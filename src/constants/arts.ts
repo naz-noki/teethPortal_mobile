@@ -188,7 +188,7 @@ const drawings: I_Art[] = [
   {
     title: "стоящий под деревом",
     year: 2025,
-    fileIds: ["/teethPortal_mobile/images/стоящий под деревом.png"],
+    fileIds: ["/teethPortal_mobile/images/стоящий_под_деревом.png"],
   },
   {
     title: "танцы в ресторане",
