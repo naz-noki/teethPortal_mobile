@@ -40,6 +40,14 @@ export const ArtsTabBar = [
 
 const paintings: I_Art[] = [
   {
+    title: "волна",
+    year: 2025,
+    size: "50х40",
+    material: "масло, акрил",
+    base: "холст на картоне",
+    fileIds: ["/teethPortal_mobile/images/волна.png"],
+  },
+  {
     title: "приворот",
     year: 2025,
     size: "10x10",
@@ -62,7 +70,10 @@ const paintings: I_Art[] = [
     size: "15x20",
     material: "масло",
     base: "холст на картоне",
-    fileIds: ["/teethPortal_mobile/images/уязвимое положение.png"],
+    fileIds: [
+      "/teethPortal_mobile/images/уязвимое_положение_1.png",
+      "/teethPortal_mobile/images/уязвимое положение.png",
+    ],
   },
   {
     title: "проклятье голубых глаз",
@@ -149,6 +160,36 @@ const paintings: I_Art[] = [
 ];
 
 const drawings: I_Art[] = [
+  {
+    title: "сухая тушь",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/сухая тушь.png"],
+  },
+  {
+    title: "нервные клетки",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/нервные клетки.png"],
+  },
+  {
+    title: "ежик",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/ежик.png"],
+  },
+  {
+    title: "зеркальная",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/зеркальная.png"],
+  },
+  {
+    title: "натура номер один",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/натура номер один.png"],
+  },
+  {
+    title: "стоящий под деревом",
+    year: 2025,
+    fileIds: ["/teethPortal_mobile/images/стоящий под деревом.png"],
+  },
   {
     title: "танцы в ресторане",
     year: 2024,
