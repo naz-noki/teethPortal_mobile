@@ -51,7 +51,7 @@ const paintings: I_Art[] = [
     title: "приворот",
     year: 2025,
     size: "10x10",
-    price: "3 000 ₽",
+    price: "6 000 ₽",
     material: "масло",
     base: "холст на картоне",
     fileIds: ["/teethPortal_mobile/images/приворот.png"],
@@ -164,11 +164,6 @@ const drawings: I_Art[] = [
     title: "сухая тушь",
     year: 2025,
     fileIds: ["/teethPortal_mobile/images/сухая тушь.png"],
-  },
-  {
-    title: "нервные клетки",
-    year: 2025,
-    fileIds: ["/teethPortal_mobile/images/нервные клетки.png"],
   },
   {
     title: "ежик",
