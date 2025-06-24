@@ -40,6 +40,14 @@ export const ArtsTabBar = [
 
 const paintings: I_Art[] = [
   {
+    title: "ласточка",
+    year: 2025,
+    size: "10х10",
+    material: "акрил, масло",
+    base: "холст на картоне",
+    fileIds: ["/teethPortal_mobile/images/ласточка.png"],
+  },
+  {
     title: "волна",
     year: 2025,
     size: "50х40",
