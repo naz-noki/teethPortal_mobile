@@ -45,7 +45,7 @@ const paintings: I_Art[] = [
     size: "15х20",
     material: "масло",
     base: "холст на картоне",
-    fileIds: ["/teethPortal_mobile/images/летний_день.png"],
+    fileIds: ["/teethPortal_mobile/images/летний_день.jpg"],
   },   
   {
     title: "18: хризантема",
