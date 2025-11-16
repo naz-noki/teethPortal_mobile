@@ -1,7 +1,6 @@
 export enum ABOUT_SECTIONS {
   Artist = "художник",
   Myth = "миф",
-  Pier = "причал",
   Price = "прайс",
 }
 
@@ -18,11 +17,6 @@ export const AboutTabBar = [
   },
   {
     value: ABOUT_SECTIONS.Price,
-    showIcon: false,
-    iconPath: "",
-  },
-  {
-    value: ABOUT_SECTIONS.Pier,
     showIcon: false,
     iconPath: "",
   },

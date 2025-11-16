@@ -3,6 +3,7 @@
   height: max-content;
   max-width: 100%;
   position: relative;
+  margin: 0 auto;
 
   .wrapper__img_btn {
     width: max-content;
@@ -24,5 +25,4 @@
       opacity: 1;
     }
   }
-
 }

@@ -39,10 +39,6 @@ const About = () => {
         id: ABOUT_SECTIONS.Price,
         element: document.getElementById(`AboutPage-${ABOUT_SECTIONS.Price}`),
       },
-      {
-        id: ABOUT_SECTIONS.Pier,
-        element: document.getElementById(`AboutPage-${ABOUT_SECTIONS.Pier}`),
-      },
     ];
 
     for (const section of sections) {
@@ -103,16 +99,11 @@ const About = () => {
       <TextBlock text={content[10]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[11]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[12]} style={{ margin: "20px auto" }} />
+      <AboutPier />
       <PriceList
         id={`AboutPage-${ABOUT_SECTIONS.Price}`}
-        style={{ margin: "35px auto" }}
+        style={{ margin: "20px auto 40px auto" }}
       />
-      <img
-        className={styles.wrapper__img}
-        style={{ maxHeight: 276 }}
-        src="/teethPortal_mobile/images/IMG_0645.gif"
-      />
-      <AboutPier id={`AboutPage-${ABOUT_SECTIONS.Pier}`} />
     </main>
   );
 };
