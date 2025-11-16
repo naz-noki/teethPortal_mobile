@@ -17,7 +17,14 @@ const Main = () => {
     if (value === ART_TYPES.Photos) {
       window.open(SOCIAL_LINKS.Pinterest, "_blank");
       setActiveArtType(ART_TYPES.Paintings);
-    } else setActiveArtType(value);
+      return;
+    } else if (value === ART_TYPES.AI) {
+      window.open(SOCIAL_LINKS.Instagram, "_blank");
+      setActiveArtType(ART_TYPES.Paintings);
+      return;
+    };
+    
+    setActiveArtType(value);
   };
 
   return (

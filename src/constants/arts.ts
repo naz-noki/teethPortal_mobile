@@ -3,6 +3,7 @@ export enum ART_TYPES {
   Drawings = "рисунки",
   Digital = "диджитал",
   Photos = "фото",
+  AI = "AI",
 }
 
 export interface I_Art {
@@ -36,9 +37,22 @@ export const ArtsTabBar = [
     showIcon: false,
     iconPath: "",
   },
+  {
+    value: ART_TYPES.AI,
+    showIcon: false,
+    iconPath: "",
+  },
 ];
 
 const paintings: I_Art[] = [
+  {
+    title: "я научусь летать",
+    year: "2025",
+    size: "20х20",
+    material: "акрил",
+    base: "холст на картоне",
+    fileIds: ["/teethPortal_mobile/images/научусьлетать.png"],
+  },
   {
     title: "летний день",
     year: "2025",
@@ -46,7 +60,7 @@ const paintings: I_Art[] = [
     material: "масло",
     base: "холст на картоне",
     fileIds: ["/teethPortal_mobile/images/summer_day.jpg"],
-  },   
+  },
   {
     title: "волна",
     year: "2025",
@@ -524,9 +538,12 @@ const digital: I_Art[] = [
 
 const photos: I_Art[] = [];
 
+const ai: I_Art[] = [];
+
 export const ARTS = {
   [ART_TYPES.Paintings]: paintings,
   [ART_TYPES.Drawings]: drawings,
   [ART_TYPES.Digital]: digital,
   [ART_TYPES.Photos]: photos,
+  [ART_TYPES.AI]: ai,
 };
