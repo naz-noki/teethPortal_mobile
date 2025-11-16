@@ -102,8 +102,9 @@ const About = () => {
       <AboutPier />
       <PriceList
         id={`AboutPage-${ABOUT_SECTIONS.Price}`}
-        style={{ margin: "20px auto 40px auto" }}
+        style={{ margin: "20px auto 50px auto" }}
       />
+      <div style={{ width: "100%", height: 15 }}></div>
     </main>
   );
 };
