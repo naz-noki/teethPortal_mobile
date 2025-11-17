@@ -46,7 +46,7 @@ export const ArtsTabBar = [
 
 const paintings: I_Art[] = [
   {
-    title: "я научусь летать",
+    title: "лунное затмение",
     year: "2025",
     size: "20х20",
     material: "акрил",
