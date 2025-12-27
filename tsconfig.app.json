@@ -21,14 +21,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    
-    /* Modern path mapping without baseUrl */
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    },
-    
-    /* Ignore deprecation warning (optional) */
-    "ignoreDeprecations": "5.0"
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"]
 }
