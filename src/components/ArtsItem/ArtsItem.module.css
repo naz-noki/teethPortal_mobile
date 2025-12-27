@@ -71,6 +71,7 @@
     }
     .wrapper__info_text {
       width: max-content;
+      max-width: 80%;
       height: max-content;
       font-family: "Unbounded-Regular";
       font-weight: lighter;

@@ -46,6 +46,30 @@ export const ArtsTabBar = [
 
 const paintings: I_Art[] = [
   {
+    title: "она еще и...",
+    year: "2025",
+    size: "25х15",
+    material: "акрил",
+    base: "холст на картоне, двп",
+    fileIds: ["/teethPortal_mobile/images/sanya.jpeg"],
+  },  
+  {
+    title: "ядовитая картина",
+    year: "2025",
+    size: "29,5х19,5",
+    material: "акрил, масло, полевые цветы, паучьи лапки",
+    base: "холст грунтованный",
+    fileIds: ["/teethPortal_mobile/images/the_poisonous_picture.jpeg"],
+  },  
+  {
+    title: "резко встать с кровати",
+    year: "2025",
+    size: "15х20",
+    material: "масло",
+    base: "холст на картоне",
+    fileIds: ["/teethPortal_mobile/images/abruptly_get_out_of_bed.jpeg"],
+  },
+  {
     title: "лунное затмение",
     year: "2025",
     size: "20х20",
@@ -179,6 +203,17 @@ const paintings: I_Art[] = [
 ];
 
 const drawings: I_Art[] = [
+  {
+    title: "поужинали",
+    year: "2025",
+    size: "XS",
+    fileIds: ["/teethPortal_mobile/images/we_had_dinner.PNG"],
+  },  
+  {
+    title: "выход из блока",
+    year: "2025",
+    fileIds: ["/teethPortal_mobile/images/exiting_the_block.jpeg"],
+  },  
   {
     title: "ежик",
     year: "2025",
