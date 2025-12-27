@@ -48,6 +48,7 @@ const ArtsItem: FC<I_ArtsItemProps> = ({
             }
           `}
           onClick={() => handlePrevSlide()}
+          loading="lazy"
         />
         <Swiper
           spaceBetween={28}
