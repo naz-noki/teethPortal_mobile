@@ -51,7 +51,7 @@ const paintings: I_Art[] = [
     size: "20х20",
     material: "акрил",
     base: "холст на картоне",
-    fileIds: ["/teethPortal_mobile/images/научусьлетать.png"],
+    fileIds: ["/teethPortal_mobile/images/научусьлетать.jpg"],
   },
   {
     title: "летний день",
@@ -180,29 +180,9 @@ const paintings: I_Art[] = [
 
 const drawings: I_Art[] = [
   {
-    title: "нервные клетки",
-    year: "2025",
-    fileIds: ["/teethPortal_mobile/images/nerveCells.png"],
-  },
-  {
-    title: "стоящий под деревом",
-    year: "2025",
-    fileIds: ["/teethPortal_mobile/images/standingUnderTree.png"],
-  },
-  {
-    title: "сухая тушь",
-    year: "2025",
-    fileIds: ["/teethPortal_mobile/images/сухая тушь.png"],
-  },
-  {
     title: "ежик",
     year: "2025",
     fileIds: ["/teethPortal_mobile/images/ежик.png"],
-  },
-  {
-    title: "зеркальная",
-    year: "2025",
-    fileIds: ["/teethPortal_mobile/images/зеркальная.png"],
   },
   {
     title: "натура номер один",
