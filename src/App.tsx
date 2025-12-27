@@ -26,6 +26,7 @@ const App = () => {
 
   // Cancel the default browser behavior when trying to open the context menu
   useEffect(() => {
+    console.log("v1.0.1");
     document.addEventListener("contextmenu", preventDefault);
     return () => {
       document.removeEventListener("contextmenu", preventDefault);
@@ -34,12 +35,12 @@ const App = () => {
 
   return (
     <>
-      <Snowfall 
+      <Snowfall
         style={{
-          position: 'fixed',
-          width: '100vw',
-          height: '100vh',
-        }} 
+          position: "fixed",
+          width: "100vw",
+          height: "100vh",
+        }}
       />
       <Outlet />
       <Footer />
