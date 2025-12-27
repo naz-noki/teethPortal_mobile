@@ -16,29 +16,6 @@ export default defineConfig({
 
   // Оптимизация сборки
   build: {
-    // Оптимизация чанков
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          // Разделить большие библиотеки на отдельные чанки
-          if (id.includes("node_modules")) {
-            if (id.includes("react") || id.includes("react-dom")) {
-              return "vendor-react";
-            } else if (id.includes("axios") || id.includes("firebase")) {
-              return "vendor-api";
-            } else if (id.includes("lottie") || id.includes("framer-motion")) {
-              return "vendor-animation";
-            }
-            return "vendor";
-          }
-        },
-        // Оптимизация имен файлов для кэширования
-        entryFileNames: `[name]-[hash].js`,
-        chunkFileNames: `[name]-[hash].js`,
-        assetFileNames: `[name]-[hash].[ext]`,
-      },
-    },
-
     // Оптимизация изображений и ассетов
     assetsInlineLimit: 4096, // Встроить файлы <4KB как base64
     cssCodeSplit: true, // Разделить CSS на чанки
@@ -53,7 +30,6 @@ export default defineConfig({
   appType: "spa",
   optimizeDeps: {
     include: ["react", "react-dom", "react-router-dom"],
-    exclude: ["lottie-web"], // Исключить тяжелые библиотеки из предварительной оптимизации
     esbuildOptions: {
       target: "es2020",
     },
