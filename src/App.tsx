@@ -4,7 +4,8 @@ import { Outlet } from "react-router-dom";
 import { setIsDefault, setLang } from "./store/slices/languages";
 import { RootState } from "./store/store";
 import Footer from "./sections/Footer/Footer";
-import Snowfall from "react-snowfall";
+import { BackGroundFall } from "./components/BackGroundFall/BackGroundFall";
+
 
 const App = () => {
   const { isDefault } = useSelector(
@@ -35,13 +36,7 @@ const App = () => {
 
   return (
     <>
-      <Snowfall
-        style={{
-          position: "fixed",
-          width: "100vw",
-          height: "100vh",
-        }}
-      />
+      <BackGroundFall/>
       <Outlet />
       <Footer />
     </>
