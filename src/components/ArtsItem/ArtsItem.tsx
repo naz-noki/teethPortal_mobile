@@ -38,7 +38,7 @@ const ArtsItem: FC<I_ArtsItemProps> = ({
       <div className={styles.wrapper__slider_block}>
         <img
           src="/teethPortal_mobile/icons/arrowLeft.svg"
-          alt="Arrow down icon"
+          alt="Arrow left  icon"
           className={`
             ${styles.wrapper__slider_icon}
             ${
@@ -68,7 +68,7 @@ const ArtsItem: FC<I_ArtsItemProps> = ({
         </Swiper>
         <img
           src="/teethPortal_mobile/icons/arrowRight.svg"
-          alt="Arrow down icon"
+          alt="Arrow right icon"
           className={`
             ${styles.wrapper__slider_icon}
             ${
@@ -101,13 +101,6 @@ const ArtsItem: FC<I_ArtsItemProps> = ({
           </div>
         )}
       </div>
-      {showArrow && (
-        <img
-          src="/teethPortal_mobile/icons/arrowDown.svg"
-          alt="Arrow down icon"
-          className={styles.wrapper__icon}
-        />
-      )}
     </div>
   );
 };

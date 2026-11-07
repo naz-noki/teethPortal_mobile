@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import { setIsDefault, setLang } from "./store/slices/languages";
 import { RootState } from "./store/store";
 import Footer from "./sections/Footer/Footer";
-import { BackGroundFall } from "./components/BackGroundFall/BackGroundFall";
+// import { BackGroundFall } from "./components/BackGroundFall/BackGroundFall";
 
 
 const App = () => {
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <>
-      <BackGroundFall/>
+      {/* <BackGroundFall/> */}
       <Outlet />
       <Footer />
     </>

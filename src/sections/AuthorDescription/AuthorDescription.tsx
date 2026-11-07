@@ -11,8 +11,9 @@ const AuthorDescription: FC<I_AuthorDescriptionProps> = ({
   return (
     <section
       className={`
-                ${styles.wrapper} 
-                ${className && className}`}
+        ${styles.wrapper} 
+        ${className && className}
+      `}
       style={style}
     >
       <h1 className={styles.wrapper__name}>милу</h1>
@@ -22,9 +23,18 @@ const AuthorDescription: FC<I_AuthorDescriptionProps> = ({
       />
       {/*  */}
       <div className={styles.wrapper__block}>
-        <div className={styles.wrapper__type} style={{ padding: "9px 20px" }}>
-          <span className={styles.wrapper__type_text}>Художник</span>
-        </div>
+        <a
+          className={styles.wrapper__type_link}
+          href={SOCIAL_LINKS.Pinterest}
+          target="_blank"
+        >
+          <div className={styles.wrapper__type}>
+            <img
+              className={styles.wrapper__type_icon}
+              src="/teethPortal_mobile/icons/pinterestLogo.svg"
+            />
+          </div>
+        </a>
         {/*  */}
         <a
           className={styles.wrapper__type_link}
@@ -39,29 +49,20 @@ const AuthorDescription: FC<I_AuthorDescriptionProps> = ({
           </div>
         </a>
         {/*  */}
-        <div className={styles.wrapper__type} style={{ padding: "9px 20px" }}>
-          <span className={styles.wrapper__type_text}>AI-креатор</span>
-        </div>
+        <a
+          className={styles.wrapper__type_link}
+          href={SOCIAL_LINKS.Instagram}
+          target="_blank"
+        >
+          <div className={styles.wrapper__type}>
+            <img
+              className={styles.wrapper__type_icon}
+              src="/teethPortal_mobile/icons/instLogo.svg"
+            />
+          </div>
+        </a>
       </div>
       {/*  */}
-      <p className={styles.wrapper__descr}>
-        <span>
-          с практическими навыками работы
-          <br />
-        </span>
-        <span>
-          графическим дизайнером
-          <br />
-        </span>
-        <span>
-          и теоретическими исследованиями
-          <br />
-        </span>
-        <span>
-          в области креативной экономики
-          <br />
-        </span>
-      </p>
     </section>
   );
 };

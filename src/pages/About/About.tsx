@@ -4,7 +4,6 @@ import TextBlock from "@/components/TextBlock/TextBlock";
 import { ABOUT_SECTIONS, AboutTabBar, content } from "@/constants/about";
 import styles from "@/pages/About/About.module.css";
 import AboutPier from "@/sections/AboutPier/AboutPier";
-import PriceList from "@/sections/PriceList/PriceList";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState<ABOUT_SECTIONS>(
@@ -82,16 +81,16 @@ const About = () => {
       <TextBlock text={content[1]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[2]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[3]} style={{ margin: "20px auto" }} />
-      <TextBlock text={content[4]} style={{ margin: "20px auto" }} />
       <img
         className={styles.wrapper__img}
         src="/teethPortal_mobile/images/IMG_9562.png"
       />
       <TextBlock
-        text={content[5]}
+        text={content[4]}
         style={{ margin: "20px auto" }}
         id={`AboutPage-${ABOUT_SECTIONS.Myth}`}
       />
+      <TextBlock text={content[5]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[6]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[7]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[8]} style={{ margin: "20px auto" }} />
@@ -100,10 +99,6 @@ const About = () => {
       <TextBlock text={content[11]} style={{ margin: "20px auto" }} />
       <TextBlock text={content[12]} style={{ margin: "20px auto" }} />
       <AboutPier />
-      <PriceList
-        id={`AboutPage-${ABOUT_SECTIONS.Price}`}
-        style={{ margin: "20px auto 50px auto" }}
-      />
       <div style={{ width: "100%", height: 15 }}></div>
     </main>
   );
