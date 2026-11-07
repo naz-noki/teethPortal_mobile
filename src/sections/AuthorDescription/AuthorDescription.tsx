@@ -16,11 +16,6 @@ const AuthorDescription: FC<I_AuthorDescriptionProps> = ({
       `}
       style={style}
     >
-      <h1 className={styles.wrapper__name}>милу</h1>
-      <img
-        className={styles.wrapper__avatar}
-        src={"/teethPortal_mobile/gif/avatar.gif"}
-      />
       {/*  */}
       <div className={styles.wrapper__block}>
         <a
@@ -30,7 +25,7 @@ const AuthorDescription: FC<I_AuthorDescriptionProps> = ({
         >
           <div className={styles.wrapper__type}>
             <img
-              className={styles.wrapper__type_icon}
+              className={`${styles.wrapper__type_icon} ${styles.wrapper__type_big_icon}`}
               src="/teethPortal_mobile/icons/pinterestLogo.svg"
             />
           </div>
@@ -62,6 +57,12 @@ const AuthorDescription: FC<I_AuthorDescriptionProps> = ({
           </div>
         </a>
       </div>
+      {/*  */}
+      <h1 className={styles.wrapper__name}>милу</h1>
+      <img
+        className={styles.wrapper__avatar}
+        src={"/teethPortal_mobile/gif/avatar.gif"}
+      />
       {/*  */}
     </section>
   );

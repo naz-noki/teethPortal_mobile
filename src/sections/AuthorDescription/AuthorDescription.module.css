@@ -3,13 +3,13 @@
 .wrapper {
   width: max-content;
   height: max-content;
-  padding-top: 15px;
+  padding-top: 10px;
   margin: 0 auto;
 
   .wrapper__name {
     width: max-content;
     height: max-content;
-    margin: 0 auto;
+    margin: 15px auto 0 auto;
     font-family: "Unbounded-Bold";
     font-size: 32px;
     font-weight: 900;
@@ -36,9 +36,8 @@
       text-decoration: none;
     }
     .wrapper__type {
-      width: 40px;
-      height: 40px;
-      max-height: 36px;
+      width: 45px;
+      height: 45px;
       margin: 0 auto;
       border-radius: 50%;
       background-color: var(--bg-blue);
@@ -57,6 +56,9 @@
         max-width: 40px;
         max-height: 40px;
         margin: 0 auto;
+      }
+      .wrapper__type_big_icon {
+        max-width: 15px !important;
       }
     }
   }
