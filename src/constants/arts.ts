@@ -184,8 +184,8 @@ const paintings: I_Art[] = [
     material: "акрил, пастель",
     base: "холст на картоне",
     fileIds: [
-      "/teethPortal_mobile/images/малиновый_рассвет_1.png",
-      "/teethPortal_mobile/images/малиновый_рассвет_2.png",
+      "/teethPortal_mobile/images/crimson_break_1.png",
+      "/teethPortal_mobile/images/crimson_break_2.png",
     ],
   },
 ];
