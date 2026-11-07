@@ -10,7 +10,6 @@ interface I_ArtsItemProps extends HTMLAttributes<HTMLDivElement> {
 
 const ArtsItem: FC<I_ArtsItemProps> = ({
   item,
-  showArrow,
   className,
   style,
 }) => {
